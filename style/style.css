@@ -1,0 +1,473 @@
+body{
+    margin: 0%;
+    font-family: 'Rubik', sans-serif;
+}
+ 
+header{
+    color: white;
+    background: linear-gradient(90deg, rgba(74,226,232,1) 42%, rgb(70, 211, 173) 75%);
+}
+.blok{
+    display: flex;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.raptor{
+    flex: 1;
+    position: relative;
+}
+h1{
+    font-size: 40px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.raptor::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.2;
+    top: -10%;
+    left: -10%;
+}
+.raptor::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.2;
+    top: 35%;
+    left: 55%;
+}
+.navigation{
+    flex: 2;
+    position: relative;  
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu a{
+    margin: 10px 2px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    border: solid 1px transparent;
+    padding: 10px 15px;
+    border-radius: 40px;  
+}
+.menu a:hover{
+    cursor: pointer;
+    border-color: white; 
+}
+.menu a:last-of-type{
+    background-color: white;
+    color:rgb(70, 211, 173);
+}
+.menu a:last-of-type:hover{
+    background-color: transparent;
+    color: white;
+}
+.image1{
+    width: 95%;
+    position: relative;
+}
+.image1_1, .image1_2{
+    width: 100%;
+    position: absolute;
+    opacity: 0.6;
+    top: 20px;
+    left: 70px;
+}
+.navigation::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.2;
+    top: 20%;
+    left: 40%;
+}
+.navigation::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.2;
+    top: 70%;
+    left: 80%;
+}
+
+.otstup{
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.fon1{
+    background-color: whitesmoke;
+}
+
+.name_of_content{
+    margin-bottom: 60px;
+}
+.bluetext{
+    color: rgba(74, 226, 232, 1);
+}
+.boldtext{
+    font-size: 25px;
+    font-weight: bold;
+}
+.boldertext{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.graytext{
+    color: gray;
+}
+.bigtext45{
+    font-size: 45px;
+}
+.bigtext35{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.bigtext25{
+    font-size: 20px;
+}
+.bigtext{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.search1 {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px;
+    border: solid 1px rgba(63, 194, 59, 0.774);
+    margin-bottom: 20px;    
+}
+.search1 input{
+    width: 420px;
+    padding: 25px;
+    border: none;
+    outline: none;
+}
+.search1 button{
+    color: white;
+    background-color: rgba(63, 179, 59, 0.774);
+    padding: 25px 30px;
+    border: none;
+    outline: none;
+}
+.search1 button:hover{
+    cursor: pointer;
+    background-color: rgba(11, 190, 4, 1);
+}
+.menu p{
+    margin: 0px 10px;
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.service{
+    width: 25%;
+    margin-top: 20px;
+}
+.image2{
+    width: 50%;
+    display: inline-block;
+}
+.image2 img{
+    width: 100%;
+}
+
+.picings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    background-color: white;
+    width: 22%;
+    height: 500px;
+    margin-top: 20px;
+    box-shadow: 0 5px 5px rgba(132, 136, 132, 0.774);
+}
+.price p:nth-child(1){
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0%;
+    color: white;
+    background-color: rgb(81, 192, 186);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+sup{
+    font-size: 25px;
+    font-weight: normal;
+}
+.price p:nth-child(4){
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(41, 185, 190);
+    background-color:  rgba(74, 226, 232, 0.3);
+    font-weight: 550;
+    border: solid 1px transparent;
+    border-radius: 40px;
+}
+.price p:nth-child(4):hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 1px lightseagreen;
+}
+
+.fon2{
+    color: white;
+    background: linear-gradient(90deg, rgba(74,226,232,0.8) 42%, rgb(70, 211, 173,0.8) 75%), 
+    url(../images/bg_1.jpg);
+    background-size: 100% 100%;
+}
+
+.faces{
+    text-align: left;
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    width: 27%;
+    margin-top: 70px;
+    position: relative;
+}
+.faces p:nth-of-type(1){
+    color: gray;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+.face{
+    width: 100px;
+    position: relative;
+    top: -50px;
+    left: 20px;
+}
+.face img{
+    width: 100%;
+    border-radius: 100%;
+}
+.quote{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color:  rgb(198, 240, 196);
+    position: relative;
+    top: -80px;
+    left: 80px;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.knok{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: 0.2s;
+    border-radius: 100%;
+    margin-top: 20px;
+    background-color: rgb(189, 184, 184);
+    
+}
+.knok:hover{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+.knok1{
+    left: calc(50% - 50px);
+}
+.knok2{
+    left: calc(50% - 25px);
+}
+.knok3{
+    left: 50%;
+}
+.knok4{
+    left: calc(50% + 25px);
+}
+.knok5{
+    left: calc(50% + 50px);
+}
+
+.greenbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greenbutton p{
+    color:  rgba(63, 179, 59, 0.774);
+    padding: 10px 20px;
+    margin: 5px;
+    border: solid 1px  rgba(63, 179, 59, 0.774);
+    border-radius: 40px;
+}
+.greenbutton p:hover{
+    cursor: pointer;
+    color: white;
+    background-color:  rgba(63, 179, 59, 0.774);
+}
+
+.dashboard{
+    margin-top: 20px;
+    width: 48%;
+    text-align: left;
+}
+.dashboard img{
+    width: 100%;
+    border: solid lightgrey 1px;
+}
+
+.fon3{
+    background-color: rgb(39, 211, 202);
+    color: white;
+}
+.search2{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px;
+    border: solid white 1px;
+    border-radius: 40px;
+}
+.search2 input, .search2 button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    
+}
+.search2 input::-webkit-input-placeholder{
+    color: white;
+}
+.search2 button{
+    cursor: pointer;
+    color: white;
+}
+
+.blog{
+    width: 30%;
+    height: 500px;
+    text-align: left;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 5px 5px rgba(132, 136, 132, 0.774);
+}
+.blog p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.blog img{
+    width: 100%;
+    height: 312px;
+}
+
+.footblok{
+    text-align: left;
+    display: flex;
+}
+.foot1, .foot4{
+    flex: 2;
+    padding: 10px;
+}
+.foot2, .foot3{
+    flex: 1;
+    padding: 10px;
+}  
+.touch{
+    display: inline-block;
+    padding: 10px 15px;
+    border: solid white 1px;
+    border-radius: 40px;
+    color: rgb(39, 211, 202);
+    background-color: white;  
+}
+.touch:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.flexfoot, .lincs{
+    display: flex;
+}
+.flexfoot p:last-of-type{
+    padding-left: 20px;
+}
+.lincs p a{
+    color: white;
+    background-color: rgba(245, 245, 245, 0.2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100%;
+    border: solid transparent 1px;
+}
+.lincs p a:hover{
+    border: solid white 1px;
+}
+.copyright span{
+    border: solid white 1px;
+    margin-right: 3px;
+}
+.updown{
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    top: 530px;
+}
+.updown p a{
+    display: block;
+    padding: 5px 15px;
+    background-color: rgb(70, 211, 173);
+    border: solid gray 1px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+}
+.updown p a:hover{
+    border: solid black 1px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 1000px){
+    .blok{flex-direction: column; text-align: center;}
+    h1{margin-top: 25px; margin-bottom: 25px;}
+    .raptor p:last-child{margin-top: 16px; margin-bottom: 0px;}
+    .navigation::before{left: 10%; top: 0%;}
+    .navigation::after{left: 60%; top: 50%;}
+    .none, .image1_1, p br, .faces:nth-of-type(n+2){display: none;}
+    .image1{width: 100%;}
+    .image1_2{position:relative; left: 0; top: 80px; opacity: 1;}
+    .search1{white-space: normal; max-width: 400px;}
+    .search1 input{padding-left: 5%; padding-right: 5%; width: 90%;}
+    .search1 button{width: 100%;}
+    .services, .picings, .footblok, .greenbutton{flex-direction: column;}
+    .service, .price, .faces, .dashboard, .blog{width: 400px;}
+    .image2{width: 120px;}
+    .price p:nth-child(4){display: block; margin-left: 20px; margin-right: 20px;}
+    .fon2{background-size: auto 100%; background-position: center center;} 
+    .greenbutton p{width: 350px;} 
+}
